@@ -95,7 +95,7 @@ def buildTweets(updates):
 
 
 def sendTweets(tweetList, armed):
-    # Tweets each line if armed, otherwise prints to stout.
+    # Tweets each line if armed, otherwise prints to stdout.
     for tweet in tweetList:
         if armed:
             api.update_status(tweet)
