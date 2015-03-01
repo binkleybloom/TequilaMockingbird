@@ -110,7 +110,6 @@ if not os.path.isfile(cached_file):
 updated = checkHashes()
 
 if (updated):
-
     updateList = compareCatalogs()
     tweetList = buildTweets(updateList)
     sendTweets(tweetList, armed)
